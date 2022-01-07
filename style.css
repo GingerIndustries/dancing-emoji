@@ -1,0 +1,17 @@
+#frameholder {
+  margin: 10px;
+  border: 1px solid black;
+  width: 20%;
+  padding: 2px;
+}
+input[type="text"] {
+  width: 50%;
+}
+#options {
+  border: 1px solid black;
+  width: 20%;
+  padding: 2px;
+}
+#options * {
+  margin: 2px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dancing Emoji</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Dancing emoji generator</h1>
+    <div>
+      Simply add new frames, and paste in each frame of the animation!
+      <div id="frameholder">
+
+      </div>
+      <div>
+        <button id="add" style="margin-bottom: 2px;">Add frame</button>
+      </div>
+    </div>
+    
+    <hr/>
+    <div id="options">
+        <label for="duration">Frame duration (ms):</label>
+      <input id="duration" type="number" min=0 step=1 value=500 style="width: 50px;"/>
+      <br/>
+      <label for="cursed">Cursed Mode (offline only)</label>
+      <input id="cursed" type="checkbox"/>
+      <br/>
+      <label for="fontsize">Font Size</label>
+      <input id="fontsize" type="number" min=10 max=50 value=16 style="width: 50px;"/>
+      <br/>
+      <label for="fonttype">Font</label>
+      <select id="fonttype">
+        <option value="serif">Serif</option>
+        <option value="sans-serif">Sans-serif</option>
+      </select>
+      <br/>
+      <button id="generate">Generate</button>
+    </div>
+    <hr/>
+    <!--
+    <span>Preview: <span id="preview"></span></span>
+    <br/>
+    -->
+    <span>Copy and paste this link to share the emoji! <br/><i><a id="permalink" target="_blank"></a></i></a></span>
+    <br/>
+    <span>Offline link (insecure): <br/><i><a id="output" target="_blank"></a></i></a></span>
+    <script src="script.js"></script>
+  </body>
+</html>
